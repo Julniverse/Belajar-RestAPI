@@ -4,7 +4,7 @@ const app: Application = express();
 const port: number = 8080;
 
 app.use("/health", (req: Request, res: Response, next: NextFunction) => {
-  res.status(200).send({ status: "200" data: "hellow"});
+  res.status(200).send({ status: "200", data: "hellow" });
 });
 
 app.listen(port, () => console.log("Server is listening on port 8080"));
