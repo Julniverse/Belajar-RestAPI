@@ -1,12 +1,12 @@
 import { Application, Router } from 'express'
-import { HealthRouter } from './health'
-import { ProductRouter } from './product'
+import { HealthRouter } from './health.route'
+import { ProductRouter } from './product.route'
 
-// eslint-disable-next-line no-undef
 const _routes: Array<[string, Router]> = [
   ['/health', HealthRouter],
   ['/product', ProductRouter]
 ]
+
 export const routes = (app: Application) => {
   _routes.forEach((route) => {
     const [url, router] = route

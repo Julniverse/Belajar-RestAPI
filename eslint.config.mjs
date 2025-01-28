@@ -20,6 +20,9 @@ export default [
     },
     rules: {
       ...tsPlugin.configs.recommended.rules, // Spread the rules here
+      "@typescript-eslint/restrict-template-expressions": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/strict-boolean-expressions": "off"
     },
   },
   {
